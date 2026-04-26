@@ -435,11 +435,6 @@
                     return;
                 }
 
-                const submitBtn = document.querySelector('.submit-btn');
-                const originalText = submitBtn.textContent;
-                submitBtn.textContent = 'Creating Account...';
-                submitBtn.disabled = true;
-
                 setTimeout(() => {
                     console.log('Sign up data:', data);
                     alert('Account created successfully! (This is a demo)');

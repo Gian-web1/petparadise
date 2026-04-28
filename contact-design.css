@@ -401,17 +401,6 @@ textarea {
     }
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-}
-
 .footer {
     background: #104212;
     color: white;
@@ -515,4 +504,88 @@ textarea {
     padding: 15px 0;
     font-size: 14px;
     color: #ccc;
+}
+
+/* MOBILE RESPONSIVE (768px and below) - ADD AT END */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        display: none;
+        /* optional: hide menu for mobile */
+    }
+
+
+    .contact-container {
+        max-width: 100%;
+        padding: 40px 0;
+        margin: 50px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+
+    .intro {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .email {
+        margin: 25px 0 40px;
+    }
+
+    /* Form */
+    .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .row input,
+    .feedback,
+    textarea {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    textarea {
+        height: 140px;
+    }
+
+    .send-btn {
+        width: 200px;
+        padding: 18px;
+        font-size: 16px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Modal */
+    .modal-box {
+        width: 90%;
+        max-width: 380px;
+        padding: 35px 25px;
+        margin: 20px;
+    }
+
+    #thankModal .modal-content {
+        max-width: 400px;
+        padding: 35px 25px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 25px;
+    }
+
+    html {
+        scroll-padding-top: 65px;
+    }
 }
